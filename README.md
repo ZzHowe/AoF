@@ -1,7 +1,7 @@
 # AoF: Boosting MLLM-based Image Quality Assessment via Visual Location Reasoning
 
 
-[![Hugging Face Dataset](https://img.shields.io/badge/Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/PLACEHOLDER/AoF-200K)
+[![Hugging Face Dataset](https://img.shields.io/badge/Hugging%20Face-Dataset%20Coming%20Soon-yellow)](https://huggingface.co/datasets/PLACEHOLDER/AoF-200K)
 
 This repository provides the project code and data construction pipeline for **AoF**, proposed in the paper **Boosting MLLM-based Image Quality Assessment via Visual Location Reasoning**.
 
@@ -148,9 +148,11 @@ Example:
 
 ## Dataset Release Plan
 
-The Hugging Face release of **AoF-200K** will be **fully open-sourced after manual cleaning**.
+The Hugging Face release of **AoF-200K** will be **officially released only after the dataset has completed manual review and cleaning**.
 
-The manual cleaning stage includes sample inspection, annotation quality control, duplicate removal, and additional filtering for abnormal or non-compliant content. After this process is completed, the full AoF-200K dataset and its Hugging Face release will be made publicly available.
+The manual review stage includes sample inspection, annotation quality control, duplicate removal, and additional filtering for abnormal or non-compliant content.
+
+The Hugging Face dataset page is therefore a placeholder at this stage. **The official AoF-200K release will be published after the full dataset has passed manual verification.**
 
 ## Notes
 
