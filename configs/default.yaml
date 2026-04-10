@@ -1,0 +1,41 @@
+paths:
+  raw_dir: ../data/raw/demo
+  output_dir: ../outputs/demo_run
+
+pipeline:
+  min_filter_score: 0.8
+  max_filter_score: 4.8
+  max_depth: 2
+  min_patch_size: 96
+  vote_beta: 0.12
+  min_experts: 3
+  reject_rollouts: 8
+  judge_accept_threshold: 0.8
+
+providers:
+  experts:
+    - type: mock
+      name: claude_mock
+      seed: 11
+    - type: mock
+      name: gemini_mock
+      seed: 17
+    - type: mock
+      name: o1_mock
+      seed: 23
+    - type: mock
+      name: seed_mock
+      seed: 29
+    - type: mock
+      name: deepseek_mock
+      seed: 31
+
+  reasoning:
+    type: mock
+    name: kimi_reasoner_mock
+    seed: 101
+
+  judge:
+    type: mock
+    name: qwen_judge_mock
+    seed: 151

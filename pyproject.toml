@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aof-data-pipeline-repro"
+version = "0.1.0"
+description = "Reproduction of the AoF-200K data construction pipeline from the CVPR 2026 submission."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.26",
+  "pillow>=10.0",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+]
+
+[project.scripts]
+aof-pipeline = "aof_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
